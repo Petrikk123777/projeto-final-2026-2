@@ -195,3 +195,57 @@ footer a { color: var(--accent); text-decoration: none; }
   .nav ul.open { display: flex; }
   .menu-toggle { display: block; }
 }
+
+
+/* ===== ANIMAÇÃO DA PARTE PRINCIPAL ===== */
+
+h1 {
+    animation: aparecerTitulo 0.8s ease-out;
+}
+
+.hero p {
+    animation: aparecerSubtitulo 0.8s ease-out 0.2s both;
+}
+
+.hero button {
+    animation: aparecerBotao 0.8s ease-out 0.4s both;
+}
+
+/* Título */
+@keyframes aparecerTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtítulo */
+@keyframes aparecerSubtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botão */
+@keyframes aparecerBotao {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
